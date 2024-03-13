@@ -15,6 +15,7 @@
 		E712E3052B9A3BAD00D113DA /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E712E3042B9A3BAD00D113DA /* PlaceModel.swift */; };
 		E73CB0532B9B155200CD3AF2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73CB0522B9B155200CD3AF2 /* CustomTableViewCell.swift */; };
 		E73CB0552B9F1D6B00CD3AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73CB0542B9F1D6B00CD3AF2 /* Main.storyboard */; };
+		E764D17C2BA1C7E400FC54CB /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764D17B2BA1C7E400FC54CB /* NewPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E712E3042B9A3BAD00D113DA /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		E73CB0522B9B155200CD3AF2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E73CB0542B9F1D6B00CD3AF2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E764D17B2BA1C7E400FC54CB /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E712E2EA2B8F07F500D113DA /* AppDelegate.swift */,
 				E712E2EC2B8F07F500D113DA /* SceneDelegate.swift */,
 				E712E2FE2B8F196800D113DA /* TableViewController.swift */,
+				E764D17B2BA1C7E400FC54CB /* NewPlaceViewController.swift */,
 				E73CB0522B9B155200CD3AF2 /* CustomTableViewCell.swift */,
 				E73CB0542B9F1D6B00CD3AF2 /* Main.storyboard */,
 				E712E3042B9A3BAD00D113DA /* PlaceModel.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E712E2EB2B8F07F500D113DA /* AppDelegate.swift in Sources */,
+				E764D17C2BA1C7E400FC54CB /* NewPlaceViewController.swift in Sources */,
 				E73CB0532B9B155200CD3AF2 /* CustomTableViewCell.swift in Sources */,
 				E712E3052B9A3BAD00D113DA /* PlaceModel.swift in Sources */,
 				E712E2ED2B8F07F500D113DA /* SceneDelegate.swift in Sources */,
