@@ -10,7 +10,7 @@
         <!--My Paces-->
         <scene sceneID="lOI-d1-Aun">
             <objects>
-                <tableViewController id="5BD-GK-afB" customClass="TableViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5BD-GK-afB" customClass="MainViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="jbL-9V-Ebk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,17 +255,20 @@
                     <navigationItem key="navigationItem" title="New Places" id="lw0-xd-2yB">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="R4b-Y8-ULm">
                             <connections>
-                                <segue destination="XBL-Lh-AeU" kind="unwind" unwindAction="cancelAction:" id="hOS-ht-axq"/>
+                                <action selector="cancelAction:" destination="8Tf-Wp-kYe" id="mMI-yZ-VbU"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="t8K-e3-Oi4"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageOfPlace" destination="0oG-Kw-5qe" id="37Z-gX-f5d"/>
+                        <outlet property="placeImage" destination="0oG-Kw-5qe" id="37Z-gX-f5d"/>
+                        <outlet property="placeLocation" destination="Syd-OW-muh" id="O2g-zb-fB0"/>
+                        <outlet property="placeName" destination="VNs-b3-TCO" id="yx5-Te-rwj"/>
+                        <outlet property="placeType" destination="1zc-6C-eoZ" id="OiS-bc-THU"/>
+                        <outlet property="saveButton" destination="t8K-e3-Oi4" id="Mys-Vp-LCJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jr0-0B-20w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="XBL-Lh-AeU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2504.5801526717555" y="-25.35211267605634"/>
         </scene>
