@@ -16,6 +16,8 @@
 		E73CB0532B9B155200CD3AF2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73CB0522B9B155200CD3AF2 /* CustomTableViewCell.swift */; };
 		E73CB0552B9F1D6B00CD3AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E73CB0542B9F1D6B00CD3AF2 /* Main.storyboard */; };
 		E764D17C2BA1C7E400FC54CB /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764D17B2BA1C7E400FC54CB /* NewPlaceViewController.swift */; };
+		E7EBFA212BD1320A0017CE36 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E7EBFA202BD1320A0017CE36 /* Realm */; };
+		E7EBFA232BD1320A0017CE36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E7EBFA222BD1320A0017CE36 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EBFA232BD1320A0017CE36 /* RealmSwift in Frameworks */,
+				E7EBFA212BD1320A0017CE36 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +71,8 @@
 				E712E2FE2B8F196800D113DA /* MainViewController.swift */,
 				E764D17B2BA1C7E400FC54CB /* NewPlaceViewController.swift */,
 				E73CB0522B9B155200CD3AF2 /* CustomTableViewCell.swift */,
-				E73CB0542B9F1D6B00CD3AF2 /* Main.storyboard */,
 				E712E3042B9A3BAD00D113DA /* PlaceModel.swift */,
+				E73CB0542B9F1D6B00CD3AF2 /* Main.storyboard */,
 				E712E2F32B8F07F600D113DA /* Assets.xcassets */,
 				E712E2F52B8F07F600D113DA /* LaunchScreen.storyboard */,
 				E712E2F82B8F07F600D113DA /* Info.plist */,
@@ -92,6 +96,10 @@
 			dependencies = (
 			);
 			name = MyPlaces;
+			packageProductDependencies = (
+				E7EBFA202BD1320A0017CE36 /* Realm */,
+				E7EBFA222BD1320A0017CE36 /* RealmSwift */,
+			);
 			productName = MyPlaces;
 			productReference = E712E2E72B8F07F500D113DA /* MyPlaces.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +128,9 @@
 				Base,
 			);
 			mainGroup = E712E2DE2B8F07F500D113DA;
+			packageReferences = (
+				E7EBFA1F2BD1320A0017CE36 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = E712E2E82B8F07F500D113DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +378,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7EBFA1F2BD1320A0017CE36 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7EBFA202BD1320A0017CE36 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7EBFA1F2BD1320A0017CE36 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E7EBFA222BD1320A0017CE36 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7EBFA1F2BD1320A0017CE36 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E712E2DF2B8F07F500D113DA /* Project object */;
 }
